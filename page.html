@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="images/logo.png" style="background: none;">
+    <link rel="stylesheet" href="main.css">
+    <script src = "main.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" width="2%" style="vertical-align: middle; padding-top: 0.75%; padding-bottom: 0.75%; margin-left: 1%;">
+        <input type="button" value="Google Store" class="inv-button" style="margin: 0%; padding: 0%;">
+    </div>
+
+
+    <div style="text-align: center; height: 30%; vertical-align: middle; margin-bottom: 5%; margin-top: 10%;">
+        <br>
+        <b style="color: rgb(58, 58, 58); font-size: 350%; margin-top: 10%;">Welcome to the</b><br>
+        <b style="color: green; font-size: 350%;">Google Store</b>
+    </div>
+
+    <div>
+        <div style="margin-left: 2.5%; color: grey; position: sticky; top: 7.5%; float: left; width: 20%;">
+            <b>Product Types</b><br>
+            <input type="checkbox" id="phone_cb" onclick="sort_products(home_list,'phone_cb');"><b>&nbsp;&nbsp;&nbsp; Phones</b><br>
+            <input type="checkbox" id="home_cb" onclick="sort_products(phone_list,'home_cb');"><b>&nbsp;&nbsp;&nbsp; Connnected Home</b>
+        </div>
+    
+
+        <div class="product-grid" id="grid">
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="4a" onmouseover="mouse_over('4a');" onmouseout="mouse_out('4a');" src="https://lh3.googleusercontent.com/buZU5tswlhdlFNi6T0DYoAG8RfEtUF-GDwna7OHAG4g9_ynXc0hZQMcR7JVLxByNJK4HavIkD7FmRJg_1wIq-W23CCJvNy_jQg=w276">
+                </div><br><br>
+                <b>&nbsp;&nbsp;Pixel 4a</b>
+            </div>
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="na" onmouseover="mouse_over('na');" onmouseout="mouse_out('na');" src="https://lh3.googleusercontent.com/bQGSuYkvITjSqJAjkK-TRhROR38Drx1lTUZoqSHUwSQD6_08CGVViENFlazOBZvSW8Mz2zkbCPmmlFSGNQaUaeH1nlnlknic7Rk=w276">    
+                </div><br><br>
+                <b>&nbsp;&nbsp;Nest Aware</b>
+            </div>
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="nc" onmouseover="mouse_over('nc');" onmouseout="mouse_out('nc');" src="https://lh3.googleusercontent.com/W96wtnKRXtCAMCw0R9Eie85uXzZP_MvK2giq2xgMwMUBDhPV2DUNXarVD-t1pXqsJwmKy8vgH-ryEcUGo1FgYSztGl6MmXCTc4Y=w276">
+                </div><br><br>
+                <b>&nbsp;&nbsp;Nest Cam</b>
+            </div>
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="ncc" onmouseover="mouse_over('ncc');" onmouseout="mouse_out('ncc');" src="https://lh3.googleusercontent.com/l4ov84XorD0-KgFKgAVanHqMIWlwNNG_UyKWvkTqUrkHzqJXeB8Ik3q3v44FVmm-jyRwuzK1_eWvq0iGGD_uzlk7BzIgESCJXAU=w508">
+                </div><br><br>
+                <b>&nbsp;&nbsp;Nest Cam Charge cable</b>
+            </div>
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="wa" onmouseover="mouse_over('wa');" onmouseout="mouse_out('wa');" src="https://lh3.googleusercontent.com/9-MlxTMhtLgcy0uWj-mkwvcgZmj7QuBRPkF0ZUIUxsq1WMc6KlRKtJvlaY9ivloT_KJOI8QMAwQ_OgxkTvqCUKwaZm1cfS27C5I=w508">
+                </div><br><br>
+                <b>&nbsp;&nbsp;Warssestein Anti-theft mount for Nest Cam</b>
+            </div>
+            <div>
+                <div><img  onclick="prod-click()" class="product" id="nm" onmouseover="mouse_over('nm');" onmouseout="mouse_out('nm');" src="https://lh3.googleusercontent.com/mgGVbkp2ABV7VRZlMygRL-rXYYAOeCYk8jHt3m46_fpHlpMW21goa41i89vHLkD-KDF25-AzDP2cEE4oERrqGO8Ih1JUjD1odA=w508">
+                </div><br><br>
+                <b>&nbsp;&nbsp;Nest Mini</b>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: end; margin-right: 8%; margin-top: 15%;">
+        <a href="https://support.google.com/store/answer/2462844?hl=en-GB" style="text-decoration: none; margin-top: 1.25%;">Country Availibility</a>
+        <ul style="list-style: none;">
+            <li><a href="https://support.google.com/store/#topic=3237699" target="_.blank" style="text-decoration: none;">Help Centre</a></a><br>
+            <li><a href="https://support.google.com/store/gethelp" target="_.blank" style="text-decoration: none;">Contact Us</a></a><br>
+            <li><a href="https://support.google.com/store/answer/3036017?hl=en&ref_topic=3244667" target="_.blank" style="text-decoration: none;">Device Recycling</a></a><br>
+        </ul>
+    </div>
+
+    <hr>
+    <div style="display: flex; justify-content: space-between;">
+        <div>
+            okay
+        </div>
+
+        <div style="float: right; margin-bottom: 1%;">
+            <a>India&nbsp;&nbsp;&nbsp;</a>
+            <a>Privacy&nbsp;&nbsp;&nbsp;</a>
+            <a>Sales Terms&nbsp;&nbsp;&nbsp;</a>
+            <a>Terms of Service&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+</body>
+</html>
